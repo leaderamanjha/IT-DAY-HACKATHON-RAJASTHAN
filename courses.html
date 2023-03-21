@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./pages/style.css">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* justify-content: center; */
+            align-items: center;
+            grid-template-columns: repeat(3, minmax(250px, 1fr));
+        }
+
+        .box{
+            border: 2px solid black;
+            background-color: rgb(255, 255, 255);
+            padding: 70px 34px;
+            text-align: center;
+            font-size: 25px;
+            transition:2s;
+            align-items: center;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            transition-delay: 1s;
+            transition:all 0.5s ease-in-out .1s;
+            border-radius: 5px;
+        }
+        .box:hover{
+            background-color:rgb(255, 193, 132);
+            font-size: 45px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="BG">
+        <div id="particles-background" class="vertical-centered-box"></div>
+        <div id="particles-foreground" class="vertical-centered-box"></div>
+        <nav class="col-11 ms-auto me-auto navbar navbar-expand-lg navbar-dark mt-lg-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-black" href="Home"><img src="./Shiksha Mitra 2.png" width="120rem" height="45rem"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="ms-lg-3 nav-item">
+                        <a class="nav-link link-dark" aria-current="page" href="#" onmouseover="voice_speech(this)">Home</a>
+                    </li>
+                    <li class="ms-lg-3 nav-item">
+                        <a class="nav-link link-dark" aria-current="page" href="https://padhai-path.netlify.app/" onmouseover="voice_speech(this)">Live</a>
+                    </li>
+                    <li class="ms-lg-3 nav-item">
+                        <a class="nav-link link-dark" href="./pages/about.html" onmouseover="voice_speech(this)">Courses</a>
+                    </li>
+                    <li class="ms-lg-3 nav-item">
+                        <a class="nav-link link-dark" href="./pages/features.html" onmouseover="voice_speech(this)">Features</a>
+                    </li>
+                    <li class="ms-lg-3 nav-item">
+                        <a class="nav-link link-dark" href="#" onmouseover="voice_speech(this)">Information</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="box" onmouseover="voice_speech(this)">IIT / JEE</div>
+            <div class="box" onmouseover="voice_speech(this)">NDA</div>
+            <div class="box" onmouseover="voice_speech(this)">NEET</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 12th</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 11th</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 10th</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 9th</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 8th</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 7th</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 6th</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 5th</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 4th</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 3rd</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 2nd</div>
+            <div class="box" onmouseover="voice_speech(this)">Class 1st</div>
+            <div class="box" onmouseover="voice_speech(this)">Senior KG</div>
+            <div class="box" onmouseover="voice_speech(this)">Junior KG</div>
+            <div class="box" onmouseover="voice_speech(this)">Nursery</div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+<script src="./voice.js"></script>
+</html>

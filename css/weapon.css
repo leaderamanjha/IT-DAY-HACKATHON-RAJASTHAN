@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header_weapons {
+  height: 25vh;
+  width: 100%;
+  padding: 0 8%;
+  /* background: #080008; */
+  position: relative;
+  background-image: url(../img/weapon.jpeg);
+  background-size: cover;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 400px;
+}
+
+.nav-links{
+    padding: 28px 0;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 25px;
+
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+
+.btn{
+    background: #ff3d00;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+.container_project {
+  position: relative;
+  margin-top: 60px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.container_project .card_project {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease-in;
+}
+
+.container_project .card_project:hover {
+  height: fit-content;
+}
+
+.container_project .card_project .imgbx {
+  position: relative;
+  width: 230px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container_project .card_project .imgbx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container_project .card_project .content_project {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+.container_project .card_project:hover .content_project {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.2s;
+}
+@media (max-width: 1000px) {
+  .container_project {
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .container_project {
+    width: 85%;
+  }
+}
+@media (max-width: 550px) {
+  .container_project {
+    width: 75%;
+    left: 10%;
+
+  }
+  .imgbx img{
+    width: 75%;
+  }
+  .card_project {
+    width: 100%;
+    margin-right: 40%;
+
+  }
+  .small{
+    width: 50px;
+  }
+
+}
+
+@media (max-width: 800px) {
+    ul li a{
+        width: 30px;
+    }
+    .logo{
+        width: 100px;
+    
+    }
+  }
